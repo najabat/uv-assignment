@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "my_packaged_app"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Najabat Ali Khan", email = "najabat.ali@hotmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = []
+
+[project.scripts]
+packaged-app = "my_packaged_app.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
